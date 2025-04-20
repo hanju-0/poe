@@ -1,0 +1,29 @@
+{
+  "name": "poe",
+  "version": "1.0.0",
+  "description": "electron app for better poe.com",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --mac"
+  },
+  "author": "hanju",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.3.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.hanju.poe",
+    "productName": "poe",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "preload.js"
+    ]
+  }
+}
